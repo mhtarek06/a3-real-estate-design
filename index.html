@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Estate</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/95d29b4b9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Real Estate</title>
+  </head>
+  <body class="manrope-font">
+    <header class="container mx-auto">
+      <div class="navbar bg-base-100 flex justify-between items-center">
+        <div class="bg-[#ABEF5F] p-2 rounded-full">
+          <i class="fa-solid fa-arrow-up-long rotate-45"></i>
+        </div>
+        <div class="navbar-start">
+          <a
+            class="btn bg-transparent border-none shadow-none text-3xl font-extrabold pl-2"
+            >Rinterio</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-black">Home</a></li>
+            <li><a class="text-gray-500">Services</a></li>
+            <li><a class="text-gray-500">Portfolio</a></li>
+            <li><a class="text-gray-500">Blogs</a></li>
+            <li><a class="text-gray-500">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass bg-white p-3 rounded-full mr-3 border-2 border-gray-200 text-gray-400"></i>
+          <i class="fa-solid fa-cart-shopping bg-white p-3 rounded-full mr-3 border-2 border-gray-200 text-gray-400"></i>
+          <div class="btn rounded-full bg-[#ABEF5F]">
+            <a class=" font-bold text-xl">Book Consult</a>
+            <div class="bg-black text-white p-2 rounded-full">
+              <i class="fa-solid fa-arrow-up-long rotate-45"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <!-- flex-col items-center justify-center -->
+        <div class="">
+          <img src="./assets/banner.png" alt="">
+        </div>
+       <div class="flex flex-col items-center justify-center space-y-5">
+        <h1 class="text-center text-4xl md:text-5xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+        <p class="text-center text-base text-gray-700">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <div class="btn rounded-full bg-[#ABEF5F]/[0.5]">
+          <a class=" font-bold text-xl">View Details</a>
+          <div class="bg-[#ABEF5F] text-black p-2 rounded-full">
+            <i class="fa-solid fa-arrow-up-long rotate-45"></i>
+          </div>
+        </div>
+       </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto"></main>
+
+    <footer class="container mx-auto"></footer>
+  </body>
 </html>
