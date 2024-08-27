@@ -13,6 +13,28 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // primary: 'rgb(139, 195, 74)',
+              // secondary: 'rgb(17, 17, 17)',
+              // body: 'rgb(248, 246, 243)',
+              // accent: 'rgb(106, 151, 57)',
+              // body_neutral: 'rgb(51, 51, 51)',
+            },
+            fontFamily: {
+              // Poppins: 'Poppins',
+            },
+            backgroundImage: {
+              "contact-us": "url('./assets/bg.jpg')",
+            },
+          },
+        },
+      };
+    </script>
     <!-- Font awesome -->
     <script
       src="https://kit.fontawesome.com/95d29b4b9a.js"
@@ -33,6 +55,9 @@
           rgba(255, 255, 255, 1),
           rgba(255, 255, 255, 0)
         );
+        .custom-margin-top-0 {
+          margin-top: 0 !important;
+        }
       }
     </style>
 
@@ -253,12 +278,18 @@
             </p>
           </div>
 
-          <div class="lg:grid lg:grid-cols-4 lg:gap-4 space-y-5">
+          <div class="lg:grid lg:grid-cols-4 lg:gap-4 space-y-5 md:space-y-0">
             <div
               class="col-span-3 rounded-lg flex flex-col lg:flex-row p-4 bg-white border border-gray-200"
             >
-              <img class="w-full lg:w-64 h-52 lg:h-44" src="./assets/img1.png" alt="" />
-              <div class="mt-5 lg:mt-0 lg:ml-5 flex flex-col justify-between space-y-4">
+              <img
+                class="w-full lg:w-64 h-52 lg:h-44"
+                src="./assets/img1.png"
+                alt=""
+              />
+              <div
+                class="mt-5 lg:mt-0 lg:ml-5 flex flex-col justify-between space-y-4"
+              >
                 <div class="space-y-4">
                   <h3 class="font-extrabold text-xl">Commercial</h3>
                   <p class="text-base text-gray-600">
@@ -276,20 +307,26 @@
                 </div>
               </div>
             </div>
-    
+
             <div class="rounded-lg p-4 bg-white border border-gray-200">
               <img class="w-full h-52 lg:h-44" src="./assets/img2.png" alt="" />
             </div>
-    
+
             <div class="rounded-lg p-4 bg-white border border-gray-200">
               <img class="w-full h-52 lg:h-44" src="./assets/img3.png" alt="" />
             </div>
-    
+
             <div
               class="lg:col-span-2 flex flex-col lg:flex-row rounded-lg p-4 bg-white border border-gray-200"
             >
-            <img class="w-full lg:w-64 h-52 lg:h-44" src="./assets/img4.png" alt="" />
-              <div class="mt-5 lg:mt-0 lg:ml-5 flex flex-col justify-between space-y-4">
+              <img
+                class="w-full lg:w-64 h-52 lg:h-44"
+                src="./assets/img4.png"
+                alt=""
+              />
+              <div
+                class="mt-5 lg:mt-0 lg:ml-5 flex flex-col justify-between space-y-4"
+              >
                 <div class="space-y-4">
                   <h3 class="font-extrabold text-xl">Residential</h3>
                   <p class="text-base text-gray-600">
@@ -307,73 +344,54 @@
                 </div>
               </div>
             </div>
-    
+
             <div class="rounded-lg p-4 bg-white border border-gray-200">
               <img class="w-full h-52 lg:h-44" src="./assets/img5.png" alt="" />
             </div>
-            <div class="md:hidden rounded-lg p-4 bg-white border border-gray-200">
+            <div
+              class="md:hidden rounded-lg p-4 bg-white border border-gray-200"
+            >
               <img class="w-full h-52 lg:h-44" src="./assets/img3.png" alt="" />
             </div>
           </div>
+        </div>
+      </section>
 
-            <div
-              class="col-span-3 rounded-lg flex p-4 bg-white border border-gray-200"
+      <section class="bg-contact-us bg-cover pt-4 pb-6 md:pt-20 md:pb-20">
+        <div class="w-11/12 md:w-8/12 mx-auto max-w-screen-2xl">
+          <div
+            class="flex flex-col items-center justify-center text-center space-y-4 mb-10"
+          >
+            <button
+              class="rounded-full bg-[#ABEF5F]/[0.2] px-4 py-1 hover:bg-[#ABEF5F] text-gray-600"
             >
-              <img class="w-64 h-44" src="./assets/img1.png" alt="" />
-              <div class="ml-5 flex flex-col justify-between space-y-4">
-                <div class="space-y-4">
-                  <h3 class="font-extrabold text-xl">Commercial</h3>
-                  <p class="text-base text-gray-600">
-                    The barn house enchants with its seamless fusion of
-                    traditional elegance and contemporary style.
-                  </p>
-                </div>
-                <div>
-                  <button class="font-bold text-xl">
-                    View Details
-                    <i
-                      class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] text-black p-2 rounded-full ml-2"
-                    ></i>
-                  </button>
-                </div>
+              <a class="font-bold text-base"
+                ><i class="fa-solid fa-arrow-right pr-1"></i>Let’s Connect</a
+              >
+            </button>
+            <h1 class="text-4xl font-bold">Let’s Discuss Next Project</h1>
+            <p class="text-gray-600 w-full lg:w-4/6">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <input type="text" placeholder="First Name*" class="input input-bordered rounded-3xl w-full" />
+            <input type="text" placeholder="Last Name*" class="input input-bordered rounded-3xl w-full" />
+            <input type="text" placeholder="Phone Number*" class="input input-bordered rounded-3xl w-full" />
+            <input type="text" placeholder="Email Number*" class="input input-bordered rounded-3xl w-full" />
+            <textarea class="textarea textarea-bordered md:col-span-2 rounded-3xl min-h-32 md:min-h-48" placeholder="Write your message here"></textarea>
+            <div class="btn rounded-full bg-[#ABEF5F] hover:bg-[#ABEF5F] group md:col-span-2">
+              <a class="font-bold text-xl">Send Mail</a>
+              <div
+                class="bg-black text-white p-2 rounded-full group-hover:bg-[#ABEF5F]/[0.5] group-hover:text-black"
+              >
+                <i class="fa-solid fa-arrow-right -rotate-45"></i>
               </div>
             </div>
-
-            <div class="rounded-lg p-4 bg-white border border-gray-200">
-              <img class="w-full h-44" src="./assets/img2.png" alt="" />
-            </div>
-
-            <div class="rounded-lg p-4 bg-white border border-gray-200">
-              <img class="w-full h-44" src="./assets/img3.png" alt="" />
-            </div>
-
-            <div
-              class="col-span-2 flex rounded-lg p-4 bg-white border border-gray-200"
-            >
-            <img class="w-64 h-44" src="./assets/img4.png" alt="" />
-              <div class="ml-4 flex flex-col justify-between space-y-4">
-                <div class="space-y-4">
-                  <h3 class="font-extrabold text-xl">Residential</h3>
-                  <p class="text-base text-gray-600">
-                    The barn house enchants with its seamless fusion of
-                    traditional elegance and contemporary style.
-                  </p>
-                </div>
-                <div>
-                  <button class="font-bold text-xl">
-                    View Details
-                    <i
-                      class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] text-black p-2 rounded-full ml-2"
-                    ></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="rounded-lg p-4 bg-white border border-gray-200">
-              <img class="w-full h-44" src="./assets/img5.png" alt="" />
-            </div>
-          </div> -->
+          </div>
         </div>
       </section>
     </main>
